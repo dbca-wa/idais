@@ -49,7 +49,7 @@ def variables(request): #(request: http.HttpRequest) -> dict[str, Any]:
             cache.set('is_admin'+ str(request.session.session_key), is_admin,  86400)
     
     return {
-        "template_group": "pbs",
+        "template_group": "idais",
         "template_title": "",
         "app_build_url": conf.settings.DEV_APP_BUILD_URL,
         "GIT_COMMIT_HASH": conf.settings.GIT_COMMIT_HASH,
