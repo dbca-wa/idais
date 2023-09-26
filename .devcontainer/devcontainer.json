@@ -1,0 +1,15 @@
+{
+	"name": "Planning and Development Advice System (IDAIS)",
+	"image": "dbcawa/docker_app_dev:idais_dev_latest",
+	"remoteUser": "container",
+	"workspaceFolder": "/data/data/projects/idais/",
+	"mounts": ["type=bind,source=/data/,target=/data/",
+	           "type=bind,source=/data/data/containerhome/,target=/home/container/"
+	          ],	
+	"appPort": [ "7022:8080","9156:9156","9157:9157","9158:9158","9159:9159","9160:9160"],
+	"runArgs": ["--env-file","${localEnv:HOME}/vscode-env/idais.env",
+		   "--hostname","idais-dev"
+		   ],
+	"forwardPorts": [9156,9157,9158,9159,9160],
+	"initializeCommand" : "${localEnv:HOME}/docker-scripts-dev/windows_vbox/postgres_docker_load.sh"
+}
