@@ -11,5 +11,5 @@
 		   "--hostname","idais-dev"
 		   ],
 	"forwardPorts": [9156,9157,9158,9159,9160],
-	"initializeCommand" : "${localEnv:HOME}/docker-scripts-dev/windows_vbox/postgres_docker_load.sh"
+	"initializeCommand" : "${localEnv:HOME}/docker-scripts-dev/windows_vbox/postgres_docker_load.sh  && ${localEnv:HOME}/docker-scripts-dev/windows_vbox/ledger_docker_load.sh"
 }

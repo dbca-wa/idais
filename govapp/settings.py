@@ -101,9 +101,9 @@ WSGI_APPLICATION = "govapp.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-DATABASES = {
-    "default": decouple.config("DATABASE_URL", cast=dj_database_url.parse, default="sqlite://memory"),
-}
+# DATABASES = {
+#     "default": decouple.config("DATABASE_URL", cast=dj_database_url.parse, default="sqlite://memory"),
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
