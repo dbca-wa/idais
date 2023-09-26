@@ -9,6 +9,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+from ledger_api_client.settings_base import *
 
 # Standard
 import os
@@ -54,6 +55,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "webtemplate_dbca",
+    "ledger_api_client",
     "govapp",
     "govapp.apps.accounts",
     "govapp.apps.swagger",
@@ -99,9 +101,9 @@ WSGI_APPLICATION = "govapp.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-DATABASES = {
-    "default": decouple.config("DATABASE_URL", cast=dj_database_url.parse, default="sqlite://memory"),
-}
+# DATABASES = {
+#     "default": decouple.config("DATABASE_URL", cast=dj_database_url.parse, default="sqlite://memory"),
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

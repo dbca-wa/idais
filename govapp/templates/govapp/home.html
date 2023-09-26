@@ -3,7 +3,7 @@
 {% block content %}
 <div id="app"><center>PLEASE WAIT</center></div>
 {% if app_build_url %}
-<script defer src="/static/pbsv2_vue/js/chunk-vendors.js"></script>
+<script defer src="/static/idais_vue/js/chunk-vendors.js"></script>
 <script type="module" type="text/javascript" src="{{ app_build_url }}"></script>
 {% else %}
 <script type="module" type="text/javascript" src="/static/webapp/assets/index.js?ver={{ GIT_COMMIT_HASH }}"></script>

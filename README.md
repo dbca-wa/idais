@@ -39,7 +39,7 @@ The backend requires the following environment variables to be set:
 ```shell
 SECRET_KEY=...
 DATABASE_URL=...
-DEV_APP_BUILD_URL="http://localhost:9072/src/main.ts"
+DEV_APP_BUILD_URL="http://localhost:9156/static/idais_vue/js/app.js"
 PRODUCTION_EMAIL=False
 EMAIL_INSTANCE='DEV'
 NON_PROD_EMAIL='nonprodemail@dbca.wa.gov.au'
@@ -68,11 +68,11 @@ $ npm run build
 #### Development Environment
 To run a development server:
 ```shell
-$ npm run dev
+$ npm run serve
 ```
 or to use a different port:
 ```shell
-$ PORT=9156 npm run dev
+$ PORT=9157 npm run serve
 ```
 
 ### Structure
