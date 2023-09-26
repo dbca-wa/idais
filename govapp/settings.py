@@ -9,6 +9,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+from ledger_api_client.settings_base import *
 
 # Standard
 import os
@@ -54,6 +55,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "webtemplate_dbca",
+    "ledger_api_client",
     "govapp",
     "govapp.apps.accounts",
     "govapp.apps.swagger",

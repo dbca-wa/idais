@@ -1,4 +1,4 @@
-Django==4.2.5
+Django==3.2.21
 djangorestframework==3.14.0
 python-decouple==3.8
 dj-database-url==2.1.0
@@ -18,3 +18,13 @@ py7zr==0.20.6
 httpx==0.25.0
 owslib==0.29.2
 numpy==1.24.4
+git+https://github.com/xzzy/ledger_api_client.git#egg=ledger_api_client
+django-confy==1.0.4
+django-countries==7.2.1
+six>=1.10.0
+django-utils-six==2.0
+phonenumbers==8.12.15
+django-phonenumber-field==5.2.0
+Babel==2.9.1
+
+
