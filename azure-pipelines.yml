@@ -32,14 +32,14 @@ stages:
               latest
               $(tagDate)
         containerRegistry: DockerHub
-        repository: dbcawa/pbsv2
+        repository: dbcawa/idais
     - task: Docker@2
       displayName: Dev Build image and Push
       inputs:
         command: buildAndPush
         dockerfile: '$(Build.SourcesDirectory)/dockerdev/Dockerfile'
         tags: | 
-              pbsv2_dev_latest
-              pbsv2_dev_$(tagDate)              
+              idais_dev_latest
+              idais_dev_$(tagDate)              
         containerRegistry: DockerHub
         repository: dbcawa/docker_app_dev    
